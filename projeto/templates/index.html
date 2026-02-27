@@ -2,14 +2,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static  'projeto/css/style.css' %}">
-    <title>TaskJitisu</title>
+  <meta charset="UTF-8">
+  <title>TaskJitsu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static  'projeto/css/style.css' %}">
+    <div class="logo-area">
+        <img src="{% static 'img/foto.png' %}" alt="Logo" class="logo">
+        <h1>Bem Vindo ao TaskJitsu</h1>
+    </div>
 </head>
-<h1>TaskJitisu</h1>
-<ul>
-    {% for Tarefa in tarefa %}
-        <li>{{ Tarefa.titulo }} </li>
-    {% endfor %}
-</ul>
+{% block content %}
+
+<section class="hero">
+    <h2>Organize suas tarefas de forma simples e eficiente</h2>
+    <p>
+        O TaskJitsu ajuda você a gerenciar suas tarefas diárias,
+        aumentar sua produtividade e manter tudo sob controle.
+    </p>
+
+</section>
+{% endblock %}
+<!-- blocos explicando -->
+<section class="features">
+    <div class="feature-box">
+        <h3>Criar Tarefa</h3>
+        <p>Adicione novas tarefas e organize suas atividades.</p>
+    </div>
+
+    <div class="feature-box">
+        <h3>Ver Progresso</h3>
+        <p>Acompanhe o andamento das suas tarefas.</p>
+    </div>
+
+    <div class="feature-box">
+        <h3>Excluir Tarefa</h3>
+        <p>Remova tarefas concluídas ou desnecessárias.</p>
+    </div>
+</section>
+<!-- BOTÃO FINAL -->
+<section class="start-now">
+    <button class="btn-start">Comece Já</button>
+</section>
+
+<footer class="site-footer">
+    <p>TaskJitsu</p>
+    <p>Contato: https://github.com/kaliloolv</p>
+</footer>

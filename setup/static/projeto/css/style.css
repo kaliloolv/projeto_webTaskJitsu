@@ -1,3 +1,119 @@
-body{
-    background-color: rgb(0, 28, 241);
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ececec; 
+}
+
+.header {
+    background: #4e585f5f; /* mesma cor do seu print */
+    padding: 20px;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center; 
+    gap: 20px; /* espaço entre logo e texto */
+}
+
+.logo {
+    height: 90px;
+    width: auto;
+}
+
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto 25px auto;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #111;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #333;
+}
+
+
+/* FEATURES */
+.features {
+    display: flex;
+    justify-content: center; /* centraliza os blocos */
+    align-items: stretch;
+    gap: 30px;
+    padding: 40px 20px;
+    flex-wrap: wrap; 
+}
+
+.feature-box {
+    width: 250px;
+    background: #f4f4f4;
+    padding: 25px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.feature-box h3 {
+    margin-bottom: 10px;
+    color: #ff6600; 
+}
+
+.feature-box:hover {
+    transform: translateY(-5px); /* efeito ao passar o mouse */
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2); 
+}
+
+/* BOTÃO GRANDE para futuro dashboard*/
+.start-now {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.btn-start {
+    padding: 20px 50px;
+    background-color: #00ff2a; 
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-start:hover {
+    background-color: #0dff01;
+    transform: translateY(-3px);
+}
+
+.site-footer {
+    background-color: #515050;  
+    color: white;            
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+    font-size: 14px;
+}
+
+.site-footer p {
+    margin: 5px 0;
 }
