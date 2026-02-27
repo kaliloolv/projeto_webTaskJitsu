@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="{% static  'projeto/css/style.css' %}">
     <title>TaskJitisu</title>
 </head>
-<body>
-    
-</body>
-</html>
+<h1>TaskJitisu</h1>
+<ul>
+    {% for Tarefa in tarefa %}
+        <li>{{ Tarefa.titulo }} </li>
+    {% endfor %}
+</ul>
