@@ -1,62 +1,7 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #ececec; 
-}
-
-.header {
-    background: #4e585f5f; /* mesma cor do seu print */
-    padding: 20px;
-}
-
-.logo-area {
-    display: flex;
-    align-items: center; 
-    gap: 20px; /* espaço entre logo e texto */
-}
-
-.logo {
-    height: 90px;
-    width: auto;
-}
-
-.hero {
-    text-align: center;
-    padding: 60px 20px;
-}
-
-.hero h2 {
-    font-size: 28px;
-    margin-bottom: 15px;
-}
-
-.hero p {
-    font-size: 18px;
-    color: #555;
-    max-width: 600px;
-    margin: 0 auto 25px auto;
-}
-
-.btn {
-    display: inline-block;
-    padding: 12px 25px;
-    background-color: #111;
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    background-color: #333;
-}
-
-
 /* FEATURES */
 .features {
     display: flex;
-    justify-content: center; /* centraliza os blocos */
+    justify-content: center;
     align-items: stretch;
     gap: 30px;
     padding: 40px 20px;
@@ -78,31 +23,32 @@ body {
 }
 
 .feature-box:hover {
-    transform: translateY(-5px); /* efeito ao passar o mouse */
+    transform: translateY(-5px);
     box-shadow: 0 12px 25px rgba(0,0,0,0.2); 
 }
 
-/* BOTÃO GRANDE para futuro dashboard*/
-.start-now {
-    text-align: center;
-    margin: 50px 0;
+.container-action {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    width: 100%;
 }
 
-.btn-start {
-    padding: 20px 50px;
-    background-color: #00ff2a; 
+.btn-comece-ja {
+    background-color: #66cc00;
     color: white;
-    font-size: 24px;
+    padding: 12px 60px;
+    font-size: 18px;
     font-weight: bold;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.3s;
+    text-decoration: none;
+    border-radius: 8px; 
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+    transition: transform 0.2s, background-color 0.2s;
 }
 
-.btn-start:hover {
-    background-color: #0dff01;
-    transform: translateY(-3px);
+.btn-comece-ja:hover {
+    background-color: #59b300; 
+    transform: scale(1.05);    
 }
 
 .site-footer {
