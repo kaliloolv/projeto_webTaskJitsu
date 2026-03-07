@@ -97,7 +97,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = "pt-br"
 
-TIME_ZONE = "America/Sao_Paulo"
+TIME_ZONE = "America/Salvador_Bahia"
 
 
 # Static files (CSS, JavaScript, Images)
